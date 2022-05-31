@@ -1,0 +1,15 @@
+[target.'cfg(all())']
+rustflags = [
+    "-Dunsafe_code",
+    "-Dclippy::all",
+]
+
+[alias]
+lints = [
+    "clippy",
+    "--all-targets",
+]
+
+[env]
+PROTOC = "protoc"
+PROTOC_NO_VENDOR = "1"

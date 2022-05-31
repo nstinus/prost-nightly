@@ -1,0 +1,4 @@
+syntax = "proto3";
+package dummy;
+
+message Message { int32 i = 1; }
